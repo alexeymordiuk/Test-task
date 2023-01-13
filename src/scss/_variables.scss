@@ -1,0 +1,12 @@
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.input {
+    @media (max-width: 630px) {
+        width: 100%!important;
+    }
+}
+

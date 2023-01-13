@@ -20,7 +20,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "baseUrl": "./src/",
+  "paths": {
+    "@/layout/*": ["components/layout/*"],
+    "@/ui/*": ["components/ui/*"],
+    "@/screens/*": ["components/screens/*"],
+    "@/*": ["./*"],
+  },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
 }

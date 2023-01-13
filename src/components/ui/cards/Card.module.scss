@@ -1,0 +1,83 @@
+.inner {
+    margin-bottom: 63px;
+
+    .count {
+        border-bottom: 1px solid #EAEAEA;
+        margin-bottom: 45px;
+        padding-bottom: 6px;
+    }
+
+    .cards-wrraper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px 45px;
+
+        @media (max-width: 920px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 620px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+    .content {
+        padding: 25px 25px;
+    }
+
+    .date {
+        opacity: 0.6;
+        display: flex;
+        align-items: center;
+        gap: 0 9px;
+    }
+
+    .date-icon {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 29px;
+        margin: 24px 0 20px 0;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 20px;
+        overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 4;
+	    -webkit-box-orient: vertical;
+    }
+
+    .btn-more {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        transition: color 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        gap: 0 6px;
+
+        &:hover {
+            color: brown;
+        }
+    }
+
+
+}
